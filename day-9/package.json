@@ -22,12 +22,13 @@
     "autoprefixer": "^6.7.7",
     "font-awesome": "^4.7.0",
     "moment": "^2.18.1",
-    "postcss-cli": "^3.0.0",
+    "postcss-cli": "^7.0.0",
     "postcss-import": "^9.1.0",
     "precss": "^1.4.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "shelljs": "^0.7.7"
+    "shelljs": "^0.7.7",
+    "snyk": "^1.319.0"
   },
   "scripts": {
     "start": "npm-run-all -c --parallel start:*",
@@ -39,6 +40,9 @@
     "start:render": "nodemon -w doc.md --exec 'npm run build:render'",
     "build:render": "node ./scripts/cqmd.js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
+  },
+  "snyk": true
 }
