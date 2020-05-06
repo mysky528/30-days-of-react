@@ -1,0 +1,32 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2020-05-06T08:35:24.791Z'
+  'npm:extend:20180424':
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2020-05-06T08:35:24.791Z'
+  'npm:hoek:20180212':
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2020-05-06T08:35:24.791Z'
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2020-05-06T08:35:24.791Z'
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2020-05-06T08:35:24.791Z'
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-05-06T08:35:24.791Z'
+  SNYK-JS-LODASH-567746:
+    - postcss-cli > postcss-reporter > lodash:
+        patched: '2020-05-06T08:35:24.791Z'
+  'npm:ms:20170412':
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > tar-pack > debug > ms:
+        patched: '2020-05-06T08:35:24.791Z'
+  'npm:stringstream:20180511':
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2020-05-06T08:35:24.791Z'
+  'npm:tough-cookie:20170905':
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2020-05-06T08:35:24.791Z'
